@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Libertinus+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root{
+    --green-clr: #dffe02;
+    --gray-clr: #898989;
+    --darkblue-clr: #171c22;
+}
+
+.bg-green{
+    background-color: var(--green-clr);
+}
+
+.bg-dark-blue{
+    background-color: var(--darkblue-clr);
+}
+
+.text-green{
+    color: var(--green-clr);
+}
+
+.text-gray{
+    color: var(--gray-clr);
+}

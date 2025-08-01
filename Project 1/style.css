@@ -1,0 +1,25 @@
+*{
+      font-family: "Libertinus Sans", sans-serif;
+}
+
+/* For navbar */
+
+.mybtn{
+    border: .1rem solid var(--green-clr) !important;
+    padding: .5rem 1.6rem;
+}
+
+.navbar-logo{
+    width: 5rem;
+    border-radius: 50%;
+}
+
+.mybtn:hover{
+    background-color: transparent;
+    color: var(--green-clr);
+}
+
+.navbar-toggler-icon{
+    background-color: white;
+}
+
