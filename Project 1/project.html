@@ -20,46 +20,63 @@
     <!-- custom css -->
     <link rel="stylesheet" href="./global.css" />
     <link rel="stylesheet" href="./style.css" />
+    <style>
+     
+    </style>
   </head>
   <body data-bs-spy="scroll" data-bs-target="#navbar">
     <!-- NAVBAR STARTS -->
-    <nav id="navbar" class="navbar navbar-expand-lg bg-dark py-3">
-      <div class="container position-sticky top-0 ">
-        <a class="navbar-brand" href="#">
-            <img  src="./media/Name logo.webp" alt="logo" class="navbar-logo img-fluid">
-        </a>
-        <button
-          class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"data-bs-target="#navbarContent">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse text-center" id="navbarContent">
-          <ul class="navbar-nav m-auto mb-2 mb-lg-0 gap-3 fs-5">
-            <li class="nav-item">
-              <a class="text-white nav-link active" href="#home">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white " href="#about">About</a>
-            </li>  
-            <li class="nav-item">
-              <a class="nav-link text-white " href="#portfolio">Portfolio</a>
-            </li>  
-            <li class="nav-item">
-              <a class="nav-link text-white " href="#work">Work</a>
-            </li>  
-            <li class="nav-item">
-              <a class="nav-link text-white " href="#blog">Blog</a>
-            </li>  
-            <li class="nav-item">
-              <a class="nav-link text-white " href="#contact">Contact</a>
-            </li>  
-          </ul>
-          <a class="btn mybtn text-uppercase bg-green fw-bolder" href="">Let's Talk</a>
+    <header id="header" class="position-sticky top-0 z-3">
+        <div class="container-fluid bg-dark text-light shadow">
+            <div class="container">
+                <nav id="navbar" class="navbar navbar-expand-md navbar-light">
+                    <div class="navbar-brand d-flex gap-3 align-items-center">
+                          <img src="./media/Name logo.webp" alt="">
+                        <span class="fw-bolder text-green fst-italic fs-3">
+                           Tanvi k
+                        </span>
+                    </div>
+
+                    <button data-bs-toggle="offcanvas" data-bs-target="#main-menu"
+                        class="navbar-toggler border-0 bg-light">
+                        <i class="fa-solid fa-toggle-on"></i>
+                    </button>
+
+                    <div class="offcanvas offcanvas-top bg-dark " id="main-menu">
+                        <div class="d-block d-md-none offcanvas-header d-flex justify-content-between">
+                            <img src="./media/Name logo.webp" alt="">
+                        <span class="text-green fw-bolder fst-italic fs-4">
+                           Tanvi k
+                        </span>
+                            <button class="btn btn-close bg-light" data-bs-dismiss="offcanvas"></button>
+                        </div>
+                        <div class="offcanvas-body d-flex flex-md-row flex-column  align-items-center  ">
+                            <ul class="navbar-nav m-auto gap-4 nav-pills fs-5">
+                                <li class="nav-item">
+                                    <a class="nav-link text-light" href="#hero">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-light" href="#about">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-light" href="#services">Services</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-light" href="#portfolio">Portfolio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-light" href="#blog">Blog</a>
+                                </li>
+                            </ul>
+                            <button class="mybtn btn bg-green">Let's Talk</button>
+                        </div>
+                    </div>
+                </nav>
+            </div>
         </div>
-      </div>
-    </nav>
-
-    <!-- All Section are here -->
-
+    </header>
+    <!-- All Section are Start here -->
     
+
   </body>
 </html>

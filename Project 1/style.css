@@ -9,17 +9,16 @@
     padding: .5rem 1.6rem;
 }
 
-.navbar-logo{
-    width: 5rem;
+img{
+    width: 3rem;
     border-radius: 50%;
 }
 
 .mybtn:hover{
     background-color: transparent;
-    color: var(--green-clr);
+    color: var(--green-clr) ;
 }
-
-.navbar-toggler-icon{
-    background-color: white;
+.offcanvas{
+    width: 100% !important;
+    height: 100% !important;
 }
-
