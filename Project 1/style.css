@@ -4,6 +4,15 @@
 
 /* For navbar */
 
+#header .nav-link {
+    background-color: transparent;
+    position: relative;
+}
+
+#header .nav-link:hover{
+    color: var(--green-clr) !important;
+}
+
 .mybtn{
     border: .1rem solid var(--green-clr) !important;
     padding: .5rem 1.6rem;
@@ -18,7 +27,51 @@ img{
     background-color: transparent;
     color: var(--green-clr) ;
 }
-.offcanvas{
-    width: 100% !important;
-    height: 100% !important;
+
+/* For Hero Section */
+
+.image-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border-top:1rem solid white ;
+    border-bottom:1rem solid white ;
+    background-image: url(./media/profile.png);
+    background-position: center;
+    background-size: 120%;
+    box-shadow: 0 0 1rem white , inset 0 0 1rem white , 0 0 2rem blue, inset 0 0 2rem var(--green-clr), 0 0 6rem var(--green-clr),inset 0 0 2rem var(--green-clr);
+}
+#hero{
+    min-height: 90vh;
+}
+h1{
+    font-size: 4rem;
+   font-family: "Merriweather Sans", sans-serif;
+}
+p{
+    font-size: .95rem;
+}
+.para{
+    max-width: 500px;
+}
+.main-txt{
+    font-size: .8rem;
+    letter-spacing: .2rem;
+}
+
+@media screen and (max-width: 576px){
+    h1{
+        font-size: 2.5rem;
+    }
+    .image-container{
+        width: 20rem;
+        margin-left:1rem;
+        box-shadow: none;
+    }
+    #hero{
+        min-height: 75vh;
+    }
 }
