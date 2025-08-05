@@ -3,7 +3,9 @@
 }
 
 /* For navbar */
-
+#header{
+    background-color: black;
+}
 #header .nav-link {
     background-color: transparent;
     position: relative;
@@ -16,16 +18,18 @@
 .mybtn{
     border: .1rem solid var(--green-clr) !important;
     padding: .5rem 1.6rem;
+   
 }
 
-img{
+.img-profile{
     width: 3rem;
     border-radius: 50%;
 }
 
 .mybtn:hover{
     background-color: transparent;
-    color: var(--green-clr) ;
+    box-shadow: 0 0 10px green;
+     color: var(--green-clr);
 }
 
 /* For Hero Section */
@@ -35,6 +39,7 @@ img{
     justify-content: center;
     align-items: center;
     width: 32rem;
+    margin-bottom: 20px;
     aspect-ratio: 1;
     border-radius: 50%;
     border-top:1rem solid white ;
@@ -42,15 +47,19 @@ img{
     background-image: url(./media/profile.png);
     background-position: center;
     background-size: 120%;
+    transition: all 2s ease;
     box-shadow: 0 0 1rem white , inset 0 0 1rem white , 0 0 2rem blue, inset 0 0 2rem var(--green-clr), 0 0 6rem var(--green-clr),inset 0 0 2rem var(--green-clr);
 }
-#hero{
-    min-height: 92vh;
+.image-container:hover{
+    transform: translateX(-10px);
 }
 h1{
     font-size: 4rem;
     font-family: "Merriweather Sans", sans-serif;
-    transition: all 0.2s ease-in-out;
+}
+h1:hover{
+    text-shadow: 2px 2px 2px var(--green-clr);
+    transition: all 1s ease;
 }
 p{
     font-size: .95rem;
@@ -63,16 +72,18 @@ p{
     letter-spacing: .2rem;
 }
 .section-container{
-    padding-block: 4rem;
+    padding-block: 3rem;
 }
 
 /* About Section */
+#about{
+    background-color: rgba(var(--darkblueRGB), 1) !important;
+}
 .id{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 2rem;
-    border-left: 1px;
+    font-size: 3rem;
     font-family: "Dancing Script", cursive;
 }
 .id::before,
@@ -80,25 +91,72 @@ p{
     content: "";
     flex: 1;
     border-bottom: 2px solid white;
-    margin: 0 10px;
+    margin: 0 20px;
 }
 a{
     text-decoration: none;
 }
 
 .aboutme{
-    width: 35rem;
+   border-radius: 50%;
 }
-.glow{
-    position: relative;
-     background-size: 120%;
-    background-image: url(./media/about.png);
-    background-position: center;
-    background-size: 120%;
-     width: 30rem;
-    aspect-ratio: 1;
+.aboutme:hover{
+    background-color: white;
+}
+
+.nav-tabs .nav-item button{
+    background-color: var(--green-clr);
+    color: black;
+    border: none;
+}
+.nav-tabs .nav-item button:hover{
+    color: green;
+    box-shadow: 0 0 1rem green;
+}
+.nav-tabs{
+    border-bottom: none;
+    margin-top: 2rem;
+}
+.image{
     border-radius: 50%;
-     border-bottom:1rem solid white ;
+    box-shadow: 0 0 .5rem white;
+    transition: all 2s ease;
+}
+.image:hover{
+    box-shadow: 0 0 .7rem green;
+    transform: translateX(10px);
+}
+
+
+/* Services Section */
+.service{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    font-family: "Dancing Script", cursive;
+}
+.service-card{
+    transition: all 1s ease;
+}
+.service-card:hover{
+    transform: translateY(-15px) scale(1);
+    box-shadow: 0 0 2rem var(--green-clr);
+    background-color: var(--green-clr);
+}
+.service-card:hover *{
+    color: black !important;
+}
+
+
+/* Contact Section */
+.contact{
+    box-shadow: 0 0 .5rem var(--green-clr);
+    transition: all 1s ease;
+}
+.contact:hover{
+    box-shadow: 0 0 2rem white;
+    transform: translateY(15px) scale(1);
 }
 
 @media screen and (max-width: 576px){
@@ -117,18 +175,18 @@ a{
     .glow{
         width: 20rem;
         margin-left:1rem;
+        margin-bottom: 20px;
     }
-    .glow::before{
-    content: "";
-    background: var(--green-clr);
-    position: absolute;
-    inset: 3rem;
-    border-radius: 50%;
-    z-index: -1;
-    filter: blur(40px);
-     background-size: 120%;
+   
+    .id{
+        border-bottom: none;
+        margin: none;
+    }
+    .nav-tabs{
+        display: flex;
+        flex-direction: column;
+        font-size: smaller;
+    }
+
 }
-.id{
-    display: none;
-}
-}
+

@@ -6,6 +6,12 @@
     --green-clr: #dffe02;
     --gray-clr: #898989;
     --darkblue-clr: #171c22;
+
+
+    /* RGB colors */
+    --green-clrRGB:223, 254, 2;
+    --gray-clrRGB: 137, 137, 137;
+    --darkblue-clrRGB: 23, 28, 34;
 }
 
 .bg-green{
@@ -22,4 +28,12 @@
 
 .text-gray{
     color: var(--gray-clr);
+}
+
+.darkblue{
+    background-color: rgba(var(--darkblue-clrRGB),.85);
+}
+
+.darkblue1{
+    background-color: rgba(var(--darkblue-clrRGB),1);
 }
