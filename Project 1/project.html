@@ -67,6 +67,9 @@
                                 <li class="nav-item">
                                     <a class="nav-link text-light" href="#blog">Blog</a>
                                 </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-light" href="#contact">Contact</a>
+                                </li>
                             </ul>
                             <button class="mybtn btn bg-green text-uppercase">Let's Talk</button>
                         </div>
@@ -100,9 +103,9 @@
 
 
 
-       <!-- About Section -->
+     <!-- About Section -->
        <section id="about" class="section-container">
-           <strong class="id text-light mb-5"> About Me</strong>
+           <strong class="id text-light mb-5"> About  <span class="text-green"> Me</span></strong>
             <div class="container darkblue1">
                 <div class="row align-items-center gap-5 gap-lg-0">
                     <div class="col-lg-6 col-12 order-last order-lg-first">
@@ -128,29 +131,29 @@
                 </div>
             </div>
 
-            <div class="container p-3 mt-5 navtabs">
+            <div class="container p-3 mt-0 navtabs">
              <ul class="nav-tabs gap-4 nav  justify-content-center">
                 <li class="nav-item ">
                     <button data-bs-toggle="tab" data-bs-target="#tab-content1" class="btn">
-                       <h2>SKILLS</h2> 
+                         SKILLS 
                     </button>
                 </li>
                 <li class="nav-item">
                     <button data-bs-toggle="tab" data-bs-target="#tab-content2" class="btn ">
-                        <h2>EDUCATION</h2>
+                        EDUCATION
                     </button>
                 </li>
                 <li class="nav-item">
                     <button data-bs-toggle="tab" data-bs-target="#tab-content3" class="btn ">
-                        <h2>CERTIFICATIONS</h2>
+                        CERTIFICATIONS
                     </button>
                 </li>
              </ul>
             </div>
                 <div class="container">
                 <div class="tab-content">
-                    <div class="tab-pane fade show " id="tab-content1">
-                        <h1 class="fst-italic text-green">Skills</h1>
+                    <div class="tab-pane fade  " id="tab-content1">
+                        <h2 class="mt-3 fst-italic text-green">Skills</h2>
                         <div>
                             <span class="fs-4">HTML</span>
                             <div class="progress">
@@ -173,25 +176,44 @@
                         </div>
                     </div>
                     <div class="tab-pane fade" id="tab-content2">
-                        <h1 class="fst-italic text-green">Education</h1>
+                        <h2 class="fst-italic text-green mt-3">Education</h2>
                         <span class="fs-4 text-light">I'am Student <br> Currently Attended In RTMNU University (Rashtrasant Tukdoji Maharaj, Nagpur Univarsity)
                         </span>
                     </div>
                     <div class="tab-pane fade" id="tab-content3">
-                        <h1 class="fst-italic text-green">Certifications</h1>
+                        <h2 class="fst-italic text-green mt-3">Certifications</h2>
                         <div class="row gap-4 gap-lg-0">
                             <div class="col-lg-6">
-                                <span class="fs-4 text-light">Content Marketing</span><br><br>
-                                <img  src="./media/certificate1.jpg" alt="" class="img-fluid">
-                            </div>
+                                <div class="accordion" id="accordion1">
+                                 <div class="accordion-item">
+                                     <div class="accordion-header">
+                                         <button class="accordion-button collapsed" data-bs-target="#accordion-item-1" data-bs-toggle="collapse">Certificate about Content Marketing</button>
+                                     </div>
+                                     <div class="collapse accordion-collapse" id="accordion-item-1" data-bs-parent="#accordion1">
+                                     <div class="accordion-body">
+                                         <img src="./media/certificate1.jpg" class="img-fluid" alt="">
+                                     </div>
+                                     </div>
+                                 </div>
+                                </div>
+                            </div>    
                             <div class="col-lg-6">
-                                <span class="fs-3 text-light">Soft Skills</span><br><br>
-                                <img class="img-fluid" src="./media/certificate2.jpg" alt="">
+                                <div class="accordion" id="accordion1">
+                                     <div class="accordion-item">
+                                        <div class="accordion-header">
+                                            <button class="accordion-button collapsed" data-bs-target="#accordion-item-1" data-bs-toggle="collapse">Certificate about Soft Skills</button>
+                                        </div>
+                                        <div class="collapse accordion-collapse" id="accordion-item-1" data-bs-parent="#accordion1">
+                                        <div class="accordion-body">
+                                            <img src="./media/certificate2.jpg" class="img-fluid" alt="">
+                                        </div>
+                                        </div>
+                                     </div>
+                                 </div> 
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                       </div>
+                   </div>
+              </div>
             </div>
         </section>
         <hr>
@@ -238,8 +260,8 @@
          </section>
 
          <!-- Contact Section -->
-          <section class="section-container">
-          <strong class="service text-light mb-5 id">Contact Me</strong>
+          <section id="contact" class="section-container">
+          <strong class="service text-light mb-5 id">Contact <span class="text-green">Me</span></strong>
             <div class="container">
              <div class="row gap-5">
                 <div class="col-lg-6 bg-black p-2 rounded-4 contact">
@@ -279,6 +301,27 @@
                 </div>
              </div>
             </div>
+          </section>
+
+          <section class="bg-dark-blue mt-5">
+            <div class="container section-container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <span class="text-light fs-3">Designing With Passion While</span><br>
+                        <span class="text-light">Exploring the World</span>
+                    </div>
+                    <div class="col-lg-6">
+                       <span class="text-light">Any type of Query</span> <br>
+                       <span class="text-light">& discussion</span> 
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex flex-row fs-3 gap-2 text-light container justify-content-center endsection">
+                        <i class="text-green mb-3 fa-brands fa-instagram"></i>
+                        <i class="text-green mb-3 fa-brands fa-square-twitter"></i>
+                        <i class="text-green mb-3 fa-brands fa-linkedin"></i>
+                        <i class="text-green mb-3 fa-brands fa-facebook"></i>
+                    </div>
           </section>
     </main>
   </body>
