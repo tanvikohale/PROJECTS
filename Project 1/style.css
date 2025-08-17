@@ -74,6 +74,9 @@ p{
 .section-container{
     padding-block: 3rem;
 }
+#hero{
+    height: 100vh;
+}
 
 /* About Section */
 #about{
@@ -98,13 +101,13 @@ a{
 }
 
 .nav-tabs .nav-item button{
-    background-color: var(--green-clr);
-    color: black;
+    background-color: transparent;
+    color: rgb(234, 228, 228);
     border: none;
 }
 .nav-tabs .nav-item button:hover{
-    color: green;
-    box-shadow: 0 0 1rem green;
+    color: var(--green-clr);
+    box-shadow: 0 0 1rem var(--green-clr);
 }
 .nav-tabs{
     border-bottom: none;
@@ -141,6 +144,31 @@ a{
 }
 
 
+
+/* portofolio section */
+.my-card{
+    width: 21rem;
+    transition: transform .5s ease;
+}
+.my-card:hover{
+    transform: scale(1.1);
+}
+
+/* Blog */
+.blog-card{
+    width: 24rem;
+    transition: all .5s ease;
+}
+.blog-card:hover{
+    box-shadow: 0 0 1rem var(--green-clr);
+}
+.card-img-top{
+    transition: transform .5s ease;
+}
+.card-img-top:hover{
+    transform:translateY(-15px) scale(1.1);
+}
+
 /* Contact Section */
 .contact{
     box-shadow: 0 0 .5rem var(--green-clr);
@@ -149,6 +177,17 @@ a{
 .contact:hover{
     box-shadow: 0 0 2rem white;
     transform: translateY(15px) scale(1);
+}
+
+
+/* footer */
+.line{
+    background: rgb(63, 63, 63);
+    height: .1rem;
+    width: 100%;
+}
+.socials:hover{
+    color: var(--green-clr);
 }
 
 @media screen and (max-width: 576px){
